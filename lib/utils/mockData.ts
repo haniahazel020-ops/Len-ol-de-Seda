@@ -1,0 +1,93 @@
+import { Room } from '@/types/rooms'
+
+export const mockRooms: Room[] = [
+  {
+    id: '1',
+    title: 'Suíte Executiva com Vista para o Mar',
+    description: 'Luxuosa suíte com vista panorâmica, decoração moderna e todos os confortos para uma estadia inesquecível.',
+    location: {
+      city: 'Rio de Janeiro',
+      state: 'RJ',
+      address: 'Copacabana, Zona Sul',
+    },
+    pricePerNight: 450,
+    images: [
+      'https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&q=80',
+      'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80',
+      'https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80',
+    ],
+    amenities: ['WiFi', 'Ar Condicionado', 'TV', 'Cofre', 'Frigobar', 'Varanda'],
+    bedrooms: 1,
+    bathrooms: 1,
+    maxGuests: 2,
+    propertyType: 'Apartamento',
+    rating: 4.8,
+    reviewCount: 127,
+    host: {
+      name: 'Maria Silva',
+      avatar: 'https://i.pravatar.cc/150?img=1',
+      isSuperHost: true,
+    },
+    availableDates: [],
+    rules: ['Não fumar', 'Não animais', 'Check-in após 15h'],
+  },
+  {
+    id: '2',
+    title: 'Loft Moderno no Centro',
+    description: 'Espaçoso loft com design contemporâneo, localizado no coração da cidade.',
+    location: {
+      city: 'São Paulo',
+      state: 'SP',
+      address: 'Vila Madalena, Zona Oeste',
+    },
+    pricePerNight: 320,
+    images: [
+      'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80',
+      'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80',
+    ],
+    amenities: ['WiFi', 'Ar Condicionado', 'TV', 'Cozinha Equipada', 'Lavanderia'],
+    bedrooms: 1,
+    bathrooms: 1,
+    maxGuests: 3,
+    propertyType: 'Loft',
+    rating: 4.6,
+    reviewCount: 89,
+    host: {
+      name: 'João Santos',
+      avatar: 'https://i.pravatar.cc/150?img=2',
+      isSuperHost: false,
+    },
+    availableDates: [],
+    rules: ['Não fumar', 'Check-in após 14h'],
+  },
+  {
+    id: '3',
+    title: 'Casa de Praia Exclusiva',
+    description: 'Casa completa com piscina, próximo à praia, ideal para famílias ou grupos.',
+    location: {
+      city: 'Florianópolis',
+      state: 'SC',
+      address: 'Jurerê Internacional',
+    },
+    pricePerNight: 850,
+    images: [
+      'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&q=80',
+      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
+    ],
+    amenities: ['WiFi', 'Piscina', 'Churrasqueira', 'TV', 'Estacionamento', 'Lavanderia'],
+    bedrooms: 3,
+    bathrooms: 2,
+    maxGuests: 6,
+    propertyType: 'Casa',
+    rating: 4.9,
+    reviewCount: 203,
+    host: {
+      name: 'Ana Costa',
+      avatar: 'https://i.pravatar.cc/150?img=3',
+      isSuperHost: true,
+    },
+    availableDates: [],
+    rules: ['Não fumar', 'Check-in após 16h', 'Respeitar vizinhança'],
+  },
+]
+
